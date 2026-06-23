@@ -2,9 +2,8 @@
 input/manifestos/*.pdf
 input/manifestos/*.png
 
-# scratch
+# scratch (tmp/ already holds the scraped .html scratch files)
 tmp/
-*.html
 
 # macOS / R / Quarto
 .DS_Store
