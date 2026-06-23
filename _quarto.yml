@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+
+website:
+  title: "AAP: The Drift"
+  description: "How the Aam Aadmi Party drifted from anti-corruption to welfare populism, measured in its own manifestos and parliamentary questions."
+  navbar:
+    left:
+      - text: "The Founding Idea"
+        href: index.html#the-founding-idea-in-numbers
+      - text: "The Drift"
+        href: index.html#from-a-manifesto-to-a-guarantee-card
+      - text: "In Parliament"
+        href: index.html#what-the-party-actually-does-in-parliament
+      - text: "Nationalism"
+        href: index.html#the-nationalism-question-honestly
+      - text: "Method"
+        href: index.html#methods
+  page-footer:
+    center: "Piyush Zaware · Text analysis of AAP manifestos (2013-2025) and parliamentary starred questions"
+
+format:
+  html:
+    theme: [flatly, custom.scss]
+    toc: true
+    toc-location: right
+    smooth-scroll: true
+    fig-cap-location: bottom
+    link-external-newwindow: true

@@ -1,0 +1,10 @@
+file,party,election_type,region,year,election_date,role,text_status,words
+delhi2013.pdf,AAP,assembly,Delhi,2013,2013-12-04,anchor,clean,4415
+delhi2015.pdf,AAP,assembly,Delhi,2015,2015-02-07,spine,clean,5360
+delhi2020.pdf,AAP,assembly,Delhi,2020,2020-02-08,spine,ocr_thin_guaranteecard,1780
+delhi2025.txt,AAP,assembly,Delhi,2025,2025-02-05,spine,news_summary_15guarantees,396
+punjab.pdf,AAP,assembly,Punjab,2017,2017-02-04,supp,clean,7978
+punjab2022.txt,AAP,assembly,Punjab,2022,2022-02-20,supp,news_summary_guarantees,150
+LS2014.pdf,AAP,lok_sabha,National,2014,2014-04-10,supp,ocr_clean,10526
+LS2019.pdf,AAP,lok_sabha,National,2019,2019-04-11,supp,clean,7399
+LS2024_vision_hindi.txt,AAP,lok_sabha,National,2024,2024-04-19,supp,hindi_web_thin_qualitative,121

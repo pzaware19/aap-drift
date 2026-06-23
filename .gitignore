@@ -1,0 +1,15 @@
+# Large source manifesto PDFs/images (copyrighted; extracted text is in output/manifestos_clean/)
+input/manifestos/*.pdf
+input/manifestos/*.png
+
+# scratch
+tmp/
+*.html
+
+# macOS / R / Quarto
+.DS_Store
+**/.DS_Store
+.Rhistory
+.RData
+.quarto/
+/.quarto/

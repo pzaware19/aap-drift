@@ -1,0 +1,66 @@
+/*-- scss:defaults --*/
+$font-family-sans-serif: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+$font-family-serif: "Source Serif Pro", Georgia, serif;
+
+$primary:   #1f6fb2;   // AAP-ish blue
+$body-color: #222629;
+$link-color: #1f6fb2;
+
+$h1-font-size: 2.3rem;
+$h2-font-size: 1.5rem;
+
+/*-- scss:rules --*/
+body {
+  font-family: $font-family-serif;
+  font-size: 1.06rem;
+  line-height: 1.7;
+  color: $body-color;
+}
+
+h1, h2, h3, .navbar-title {
+  font-family: $font-family-sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.title {
+  font-size: 2.4rem;
+  line-height: 1.15;
+  color: #14202b;
+}
+.subtitle {
+  font-family: $font-family-sans-serif;
+  font-weight: 400;
+  color: #5a6772;
+  font-size: 1.15rem;
+  line-height: 1.45;
+}
+
+h2 {
+  margin-top: 2.4rem;
+  padding-top: 0.6rem;
+  border-top: 2px solid #eef1f3;
+  color: #14202b;
+}
+
+.navbar {
+  border-bottom: 3px solid $primary;
+}
+
+figure img {
+  border: 1px solid #eef1f3;
+  border-radius: 4px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+}
+figcaption {
+  font-family: $font-family-sans-serif;
+  font-size: 0.86rem;
+  color: #6b7780;
+  margin-top: 0.5rem;
+}
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* a slim accent rule under the lead */
+.quarto-title-block { border-bottom: 1px solid #eef1f3; padding-bottom: 1rem; }

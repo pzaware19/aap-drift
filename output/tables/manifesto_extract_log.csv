@@ -1,0 +1,7 @@
+file,stem,year,region,method,words
+delhi2013.pdf,delhi2013,2013,Delhi,pdftotext,4415
+LS2014.pdf,LS2014,2014,National,ocr,10526
+delhi2015.pdf,delhi2015,2015,Delhi,pdftotext,5360
+punjab.pdf,punjab,2017,Punjab,pdftotext,7978
+LS2019.pdf,LS2019,2019,National,pdftotext,7399
+delhi2020.pdf,delhi2020,2020,Delhi,ocr,1780
