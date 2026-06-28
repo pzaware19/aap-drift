@@ -83,7 +83,19 @@ Two of the common claims about AAP are not text questions at all, and I will not
 
 The first is that AAP was built on a grassroots cadre. The affidavit data shows what happened to its candidates, who grew richer and more entangled with the law. But the volunteers, the mohalla networks, the membership rolls, the actual cadre, do not live in any of this. The faces on the ballot changed; whether the foot soldiers did is a question for the party's own records.
 
-The second is that the party is finished. That is an electoral fact, not a linguistic one. In February 2025 AAP lost Delhi to the BJP, falling from 62 seats to 22, with Kejriwal and Manish Sisodia both losing their own constituencies after the party had held the city for a decade. It still governs Punjab until 2027. Whether that is the end or a trough is a question for the next election, not for a topic model.
+The second is that the party is finished. That is an electoral fact, not a linguistic one, and the facts trace a clean arc: a breakthrough in 2013, two landslides, then collapse.
+
+![AAP's seats in the 70-member Delhi assembly across four elections. From 28 in its 2013 debut to back-to-back landslides of 67 and 62, then down to 22 in 2025, when it lost Delhi to the BJP. Source: Election Commission of India.](output/figures/AAP_electoral_arc.png){width=90%}
+
+In February 2025 AAP lost Delhi, falling from 62 seats to 22, with Kejriwal and Manish Sisodia both losing their own constituencies after the party had held the city for a decade. It still governs Punjab until 2027. Whether that is the end or a trough is a question for the next election, not for a topic model.
+
+## The public moved on too
+
+AAP did not drift in a vacuum. The anti-corruption wave it rode crested and broke, and you can watch it happen in what India typed into Google.
+
+![Google search interest in India, 2012 to 2025. Interest in AAP's founding demand, the Jan Lokpal, spiked around the party's birth and then collapsed; its welfare brand, the mohalla clinic, and the wider freebie debate, revadi, rose from nothing.](output/figures/AAP_google_trends.png){width=100%}
+
+Searches for "Jan Lokpal," the bill AAP was founded to pass, surged in 2012 and 2014 and then fell to almost nothing. Over the same years, searches for "mohalla clinic," AAP's signature welfare scheme, and "revadi," the slang for electoral freebies, climbed from zero. The country's attention shifted from graft to giveaways on roughly the same timeline as AAP's own vocabulary. The party changed with its market.
 
 ## The point
 
@@ -101,6 +113,8 @@ A party is allowed to change. Voters are allowed to know that it has. What the t
 
 **Candidate affidavits.** Assets and criminal-case counts for every AAP candidate in Delhi 2013, 2015, 2020 and 2025 (and Punjab 2022), scraped from myneta.info, which publishes the affidavits parties' candidates file with the Election Commission. The criminal-case figure counts candidates with one or more declared cases and does not weigh their gravity or origin.
 
-**Speeches.** Thirty-four Arvind Kejriwal speech transcripts, 2013 to 2026, located via YouTube search and read through the auto-generated Hindi captions, scored on Devanagari versions of the same theme dictionaries. Speech dates are approximated by upload date, and per-year samples are small, so the speeches are grouped into eras. Code and the full corpus are in the project repository.
+**Speeches.** Thirty-four Arvind Kejriwal speech transcripts, 2013 to 2026, located via YouTube search and read through the auto-generated Hindi captions, scored on Devanagari versions of the same theme dictionaries. Speech dates are approximated by upload date, and per-year samples are small, so the speeches are grouped into eras.
+
+**Elections and public interest.** Seat and vote-share figures are from the Election Commission of India. The search-interest series are from Google Trends (India, 2012 to 2025), each query smoothed over six months; Trends measures interest in the terms themselves, not in AAP specifically, so it is offered as context for the shift in salience, not as a direct measure of the party. Code and the full corpus are in the project repository.
 
 *Piyush Zaware. Built with unsupervised text analysis on AAP's own manifestos and its MPs' parliamentary questions.*

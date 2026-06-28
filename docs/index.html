@@ -134,6 +134,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#from-movement-to-machine" id="toc-from-movement-to-machine" class="nav-link" data-scroll-target="#from-movement-to-machine">From movement to machine</a></li>
   <li><a href="#the-nationalism-question-honestly" id="toc-the-nationalism-question-honestly" class="nav-link" data-scroll-target="#the-nationalism-question-honestly">The nationalism question, honestly</a></li>
   <li><a href="#what-the-data-cannot-tell-you" id="toc-what-the-data-cannot-tell-you" class="nav-link" data-scroll-target="#what-the-data-cannot-tell-you">What the data cannot tell you</a></li>
+  <li><a href="#the-public-moved-on-too" id="toc-the-public-moved-on-too" class="nav-link" data-scroll-target="#the-public-moved-on-too">The public moved on too</a></li>
   <li><a href="#the-point" id="toc-the-point" class="nav-link" data-scroll-target="#the-point">The point</a></li>
   <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Data and method</a></li>
   </ul>
@@ -237,7 +238,25 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="what-the-data-cannot-tell-you">What the data cannot tell you</h2>
 <p>Two of the common claims about AAP are not text questions at all, and I will not pretend the words can settle them.</p>
 <p>The first is that AAP was built on a grassroots cadre. The affidavit data shows what happened to its candidates, who grew richer and more entangled with the law. But the volunteers, the mohalla networks, the membership rolls, the actual cadre, do not live in any of this. The faces on the ballot changed; whether the foot soldiers did is a question for the party’s own records.</p>
-<p>The second is that the party is finished. That is an electoral fact, not a linguistic one. In February 2025 AAP lost Delhi to the BJP, falling from 62 seats to 22, with Kejriwal and Manish Sisodia both losing their own constituencies after the party had held the city for a decade. It still governs Punjab until 2027. Whether that is the end or a trough is a question for the next election, not for a topic model.</p>
+<p>The second is that the party is finished. That is an electoral fact, not a linguistic one, and the facts trace a clean arc: a breakthrough in 2013, two landslides, then collapse.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="output/figures/AAP_electoral_arc.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption>AAP’s seats in the 70-member Delhi assembly across four elections. From 28 in its 2013 debut to back-to-back landslides of 67 and 62, then down to 22 in 2025, when it lost Delhi to the BJP. Source: Election Commission of India.</figcaption>
+</figure>
+</div>
+<p>In February 2025 AAP lost Delhi, falling from 62 seats to 22, with Kejriwal and Manish Sisodia both losing their own constituencies after the party had held the city for a decade. It still governs Punjab until 2027. Whether that is the end or a trough is a question for the next election, not for a topic model.</p>
+</section>
+<section id="the-public-moved-on-too" class="level2">
+<h2 class="anchored" data-anchor-id="the-public-moved-on-too">The public moved on too</h2>
+<p>AAP did not drift in a vacuum. The anti-corruption wave it rode crested and broke, and you can watch it happen in what India typed into Google.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="output/figures/AAP_google_trends.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Google search interest in India, 2012 to 2025. Interest in AAP’s founding demand, the Jan Lokpal, spiked around the party’s birth and then collapsed; its welfare brand, the mohalla clinic, and the wider freebie debate, revadi, rose from nothing.</figcaption>
+</figure>
+</div>
+<p>Searches for “Jan Lokpal,” the bill AAP was founded to pass, surged in 2012 and 2014 and then fell to almost nothing. Over the same years, searches for “mohalla clinic,” AAP’s signature welfare scheme, and “revadi,” the slang for electoral freebies, climbed from zero. The country’s attention shifted from graft to giveaways on roughly the same timeline as AAP’s own vocabulary. The party changed with its market.</p>
 </section>
 <section id="the-point" class="level2">
 <h2 class="anchored" data-anchor-id="the-point">The point</h2>
@@ -250,7 +269,8 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Questions.</strong> 2,836 starred questions asked by AAP MPs, 2,567 in the Rajya Sabha and 269 in the Lok Sabha, 2014 to 2025. Rajya Sabha members were identified from a hand-checked roster of AAP’s eleven members across the Delhi and Punjab benches, because the source data’s party labels were incomplete. “Sanjay Singh” and “Harbhajan Singh” are common names and carry a small risk of contamination. The questions span a short window with changing membership, so they describe the current, post-drift party rather than a trajectory.</p>
 <p><strong>Measurement.</strong> Theme shares are the fraction of each document’s tokens matching four keyword dictionaries (anti-corruption and Swaraj, welfare and freebies, nationalism and religion, development and services). Cosine distance uses TF-IDF vectors over the manifesto corpus.</p>
 <p><strong>Candidate affidavits.</strong> Assets and criminal-case counts for every AAP candidate in Delhi 2013, 2015, 2020 and 2025 (and Punjab 2022), scraped from myneta.info, which publishes the affidavits parties’ candidates file with the Election Commission. The criminal-case figure counts candidates with one or more declared cases and does not weigh their gravity or origin.</p>
-<p><strong>Speeches.</strong> Thirty-four Arvind Kejriwal speech transcripts, 2013 to 2026, located via YouTube search and read through the auto-generated Hindi captions, scored on Devanagari versions of the same theme dictionaries. Speech dates are approximated by upload date, and per-year samples are small, so the speeches are grouped into eras. Code and the full corpus are in the project repository.</p>
+<p><strong>Speeches.</strong> Thirty-four Arvind Kejriwal speech transcripts, 2013 to 2026, located via YouTube search and read through the auto-generated Hindi captions, scored on Devanagari versions of the same theme dictionaries. Speech dates are approximated by upload date, and per-year samples are small, so the speeches are grouped into eras.</p>
+<p><strong>Elections and public interest.</strong> Seat and vote-share figures are from the Election Commission of India. The search-interest series are from Google Trends (India, 2012 to 2025), each query smoothed over six months; Trends measures interest in the terms themselves, not in AAP specifically, so it is offered as context for the shift in salience, not as a direct measure of the party. Code and the full corpus are in the project repository.</p>
 <p><em>Piyush Zaware. Built with unsupervised text analysis on AAP’s own manifestos and its MPs’ parliamentary questions.</em></p>
 
 
