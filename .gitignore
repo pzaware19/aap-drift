@@ -12,3 +12,10 @@ tmp/
 .RData
 .quarto/
 /.quarto/
+
+**/*.quarto_ipynb
+
+# large/regenerable data
+input/kejriwal_speeches.csv
+input/manifestos/*.pdf
+tmp/

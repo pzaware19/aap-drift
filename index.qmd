@@ -1,6 +1,6 @@
 ---
 title: "The Aam Aadmi Party Stopped Talking About Corruption"
-subtitle: "A party born from an anti-corruption movement spent a decade becoming something else. Its own manifestos show the turn, year by year."
+subtitle: "A party born from an anti-corruption movement spent a decade becoming something else. Its manifestos, its candidates, and its leader's own speeches all show the turn."
 format:
   html:
     theme: [flatly, custom.scss]
@@ -55,17 +55,33 @@ Across 2,836 starred questions asked by AAP members in the Lok Sabha and Rajya S
 
 This is the same party showing up in a second, independent source. The manifestos and the questions are written by different people for different purposes, and they agree.
 
+## From movement to machine
+
+The manifestos and the questions are about words. The cleanest evidence of what AAP became is not in its language at all. It is in who it puts up for election.
+
+Every candidate in India files a sworn affidavit declaring their assets and any criminal cases. I pulled them for every AAP candidate in Delhi, the party's heartland, from its first contest in 2013 to its defeat in 2025.
+
+![AAP's Delhi candidates over four elections. Median declared assets quadrupled, from about one crore rupees in 2013 to over four crore in 2025; the share carrying criminal cases rose from 7 percent to 64 percent. Source: candidate affidavits, myneta.info / ADR.](output/figures/MyNeta_candidate_trajectory.png){width=100%}
+
+In 2013, AAP's Delhi candidates were what the party claimed to be: modest and clean. Their median declared assets were about one crore rupees, and just seven percent had a criminal case to their name. By 2025 the median candidate was worth four and a quarter crore, four times richer, and sixty-four percent carried criminal cases. The insurgents had become, on paper, hard to tell apart from the political class they set out to replace.
+
+One honest qualification, because AAP would rightly raise it. Part of that jump in criminal cases is the price of being an opposition party under a hostile Centre. AAP's senior leaders were jailed in central-agency cases over this period, and many ordinary cases are the residue of protest politics. So read the criminal-case line with care. The asset line has no such defence. A party that began by asking where politicians' money came from now fields candidates four times wealthier than its founders.
+
 ## The nationalism question, honestly
 
 There is a popular version of the AAP story that adds a final act: a turn to soft Hindutva. Kejriwal reciting the Hanuman Chalisa, a "deshbhakti" curriculum in Delhi schools, support for building the Ram temple.
 
-My manifesto data does not support that, and it would be dishonest to pretend otherwise. The nationalist and religious line in the chart above sits on the floor for every Delhi manifesto, including 2025. Where the signal does appear is in the party's 2024 Lok Sabha vision, which is written in Hindi and headlined, literally, "AAP's Ramrajya across the country," with promises to recover land occupied by China, give the army a free hand, and scrap the Agniveer scheme. So the religious and nationalist idiom is real, but it lives in the national campaign and the speeches, not in the Delhi manifestos that carry the rest of this story. The clean, defensible finding is narrower than the headline: AAP shed its anti-corruption identity and became a welfare-delivery party. The Ramrajya turn is a separate, thinner thread.
+The Delhi manifestos do not support it, and for a while that left me hedging. The nationalist and religious line in the manifesto chart sits on the floor for every year, including 2025. But manifestos are written documents, in English, by committees. Kejriwal speaks, in Hindi, to crowds, and that is where the idiom would live if it lived anywhere. So I pulled the transcripts of thirty-four of his speeches from 2013 to 2026 and scored them on the same themes.
+
+![Theme share of Arvind Kejriwal's speeches (Hindi transcripts), grouped into eras. Welfare language rises steadily; nationalist and religious language, absent from the Delhi manifestos, runs through the speeches and is highest in his years in power.](output/figures/Kejriwal_theme_eras.png){width=95%}
+
+The speeches tell the manifesto story back in his own voice: welfare rising steadily across the years. And they add the part the manifestos missed. Nationalist and religious language, all but absent from the Delhi documents, runs right through the speeches, and roughly tripled from his founding years to his time in power. A recent rally speech opens, without irony, "Bharat Mata ki Jai... Vande Mataram." The Ramrajya idiom is not a thin thread after all. It is just that he reserves it for the microphone, not the manifesto. The honest reading, with three sources now agreeing, is that AAP shed its anti-corruption identity for welfare populism, and that its leader learned to wrap that populism in the flag.
 
 ## What the data cannot tell you
 
 Two of the common claims about AAP are not text questions at all, and I will not pretend the words can settle them.
 
-The first is that AAP was built on a grassroots cadre. Maybe so, but the structure of a party, its members and volunteers and candidate networks, does not live in its manifestos or its MPs' questions. Nothing here speaks to it.
+The first is that AAP was built on a grassroots cadre. The affidavit data shows what happened to its candidates, who grew richer and more entangled with the law. But the volunteers, the mohalla networks, the membership rolls, the actual cadre, do not live in any of this. The faces on the ballot changed; whether the foot soldiers did is a question for the party's own records.
 
 The second is that the party is finished. That is an electoral fact, not a linguistic one. In February 2025 AAP lost Delhi to the BJP, falling from 62 seats to 22, with Kejriwal and Manish Sisodia both losing their own constituencies after the party had held the city for a decade. It still governs Punjab until 2027. Whether that is the end or a trough is a question for the next election, not for a topic model.
 
@@ -81,6 +97,10 @@ A party is allowed to change. Voters are allowed to know that it has. What the t
 
 **Questions.** 2,836 starred questions asked by AAP MPs, 2,567 in the Rajya Sabha and 269 in the Lok Sabha, 2014 to 2025. Rajya Sabha members were identified from a hand-checked roster of AAP's eleven members across the Delhi and Punjab benches, because the source data's party labels were incomplete. "Sanjay Singh" and "Harbhajan Singh" are common names and carry a small risk of contamination. The questions span a short window with changing membership, so they describe the current, post-drift party rather than a trajectory.
 
-**Measurement.** Theme shares are the fraction of each document's tokens matching four keyword dictionaries (anti-corruption and Swaraj, welfare and freebies, nationalism and religion, development and services). Cosine distance uses TF-IDF vectors over the manifesto corpus. Code and the full corpus are in the project repository.
+**Measurement.** Theme shares are the fraction of each document's tokens matching four keyword dictionaries (anti-corruption and Swaraj, welfare and freebies, nationalism and religion, development and services). Cosine distance uses TF-IDF vectors over the manifesto corpus.
+
+**Candidate affidavits.** Assets and criminal-case counts for every AAP candidate in Delhi 2013, 2015, 2020 and 2025 (and Punjab 2022), scraped from myneta.info, which publishes the affidavits parties' candidates file with the Election Commission. The criminal-case figure counts candidates with one or more declared cases and does not weigh their gravity or origin.
+
+**Speeches.** Thirty-four Arvind Kejriwal speech transcripts, 2013 to 2026, located via YouTube search and read through the auto-generated Hindi captions, scored on Devanagari versions of the same theme dictionaries. Speech dates are approximated by upload date, and per-year samples are small, so the speeches are grouped into eras. Code and the full corpus are in the project repository.
 
 *Piyush Zaware. Built with unsupervised text analysis on AAP's own manifestos and its MPs' parliamentary questions.*
